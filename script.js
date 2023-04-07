@@ -4,7 +4,11 @@ const logregBox = document.querySelector('.logreg-box');
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar')[0]
 const searchForm = document.getElementsByClassName('search-form')[0]
+const searchBtn = document.getElementsByClassName('sbtn')[0]
 
+searchBtn.addEventListener('click', ()=>{
+    event.preventDefault()
+});
 registerLink.addEventListener('click', ()=>{
     logregBox.classList.add('active');
 });
